@@ -1,0 +1,90 @@
+
+/** Modal */
+.modal-container {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, .5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container.ativo {
+  display: flex;
+}
+
+.modal {
+  background: #FFFFFF;
+  min-width: 400px;
+  padding: 40px;
+  border: 10px solid #FB5;
+  box-shadow: 0 0 0 10px #FFFFFF;
+  position: relative;
+}
+
+/** Animação do Modal */
+@keyframes mostraModal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ativo .modal {
+  animation: mostraModal .3s forwards;
+}
+
+/*********************/
+
+.fechar {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  background: #E54;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3);
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  font-family: 'IBM Plex Mono', monospace;
+  cursor: pointer;
+}
+/******************/
+
+/** Formulario */
+.modal label {
+  font-family: 'IBM Plex Mono', monospace;
+  display: block;
+  font-weight: bold;
+  margin: 1rem 0 .5rem 0;
+}
+
+.modal input {
+  width: 100%;
+  padding: .7rem .5rem;
+}
+
+.modal button[type="submit"] {
+  display: block;
+  background: #E54;
+  border: none;
+  border-radius: 4px;
+  padding: .7rem 2rem;
+  font-size: 1rem;
+  color: #FFFFFF;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: bold;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+/******************/

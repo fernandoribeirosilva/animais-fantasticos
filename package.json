@@ -1,0 +1,19 @@
+{
+  "name": "animais-eslint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "build": "webpack --mode production --entry ./js/script.js -o ./",
+    "dev": "webpack --mode development --watch --entry ./js/script.js -o ./"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "webpack": "^5.64.3",
+    "webpack-cli": "^4.9.1"
+  }
+}
