@@ -27,5 +27,6 @@ export default class initTabNav {
       this.activeTab(0);// vai colocar o primeiro item com ativo, ou seja vai mostra a descrição.
       this.addTabNavEvent();
     }
+    return this;
   }
 }
