@@ -49,3 +49,10 @@
 .dropdown-menu li + li {/* vai dar um espasso no topo no LI que vem depois de um oltro LI */
   margin-top: 8px;
 }
+
+@media (max-width: 700px) {
+  [data-dropdown] .dropdown-menu {
+  display: block;
+  animation: show-up .3s  forwards;
+}
+}

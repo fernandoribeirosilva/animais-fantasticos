@@ -10,7 +10,8 @@ export default class MenuMobile {
     this.onpenMenu = this.onpenMenu.bind(this);
   }
   
-  onpenMenu() {
+  onpenMenu(event) {
+    event.preventDefault();
     this.menuList.classList.add(this.activeClass);
     this.menuBotton.classList.add(this.activeClass);
   
