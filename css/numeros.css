@@ -23,4 +23,8 @@
     grid-column: 1;
     margin-left: 20px;
   }
+
+  .numeros-grid h3 {
+    font-size: 1.5rem;
+  }
 }
